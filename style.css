@@ -1,0 +1,34 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "head head head head"
+    "aside main main main"
+    "aside main main main"
+    "foot foot foot foot";
+}
+    
+
+
+.head {
+    background-color: lightblue;
+    grid-area: head;
+   
+}
+.aside {
+    background-color: lightslategray;
+    grid-area: aside;
+}
+.main{
+    background-color: brown;
+    grid-area: main;
+    
+    
+}
+.foot{
+    background-color: coral;
+    grid-area: foot;
+}
