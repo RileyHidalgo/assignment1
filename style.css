@@ -1,7 +1,7 @@
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 0.7fr 2.7fr 2.7fr 0.8fr;
     column-gap: 10px;
     row-gap: 10px;
     grid-template-areas:
@@ -23,12 +23,102 @@
     grid-area: aside;
 }
 .main{
-    background-color: brown;
+    background-color: beige;
     grid-area: main;
+    position: relative;
     
     
 }
 .foot{
     background-color: coral;
     grid-area: foot;
+}
+
+main > section{ 
+    border-radius: 25px;
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: white;
+    margin: auto;
+    top :0; left: 0; right: 0; bottom: 0;
+
+}
+div.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+    .but1{
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+        order: 0;
+        background-color: green;
+        color: white;
+    }
+
+
+    /* flex: 0 0 75px;
+    margin-left: 10px;} */ 
+    .but2{
+        text-align: right;
+        order: 4;
+        border-radius: 5px;
+        background-color: gray;
+        color: white;}
+
+
+
+            
+        
+    .but3{
+        order: 2;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        background-color: green;
+        color: white;
+            }
+        
+        
+            
+    .but4{
+        order: 3;
+        border-radius: 5px;
+        width: 70px;
+        height: 30px;
+        text-align: center;
+        background-color: red;
+        color: white;}
+.img {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-end;
+          }
+    .img1 {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;}
+    .img2 {
+        display: block;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;}
+
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
 }
