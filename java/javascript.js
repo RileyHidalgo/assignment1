@@ -20,6 +20,8 @@ btnDark.addEventListener('click', () => textarea.style.backgroundColor="#494342"
 btnDark.addEventListener('click', () => notearea.style.backgroundColor="#494342")
 btnDark.addEventListener('click', () => btnDark.style.backgroundColor="#494342")
 
+btnDark.removeEventListener('click', () => btnDark.style.backgroundColor="red")
+
 btnCancel.addEventListener('click', () => textbox.style.display ='none');
 btnCancel.addEventListener('click', () => btnCancel.style.display ='none');
 btnCancel.addEventListener('click', () => btnSave.style.display ='none');
@@ -28,3 +30,5 @@ let inputs = document.querySelectorAll('textarea');
 btnNote.addEventListener('click', () => {
     inputs.forEach(textarea => textarea.value = '');
 });
+let notearea = document.querySelector("textarea");
+let obj = {title:"note one", body:"some text1", title:"note two", body:"some text2"}
